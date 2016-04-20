@@ -44,9 +44,9 @@ function mather() {
             var answer = parseInt(first) - parseInt(second)
             alert(first + " plus " + second + " equals " + answer)
             break;
-        case "multi":
+        case "multiply":
             var answer = parseInt(second) * parseInt(first)
-            alert(first + " plus " + second + " equals " + answer)
+            alert(first + " time " + second + " equals " + answer)
             break;
         case "divide":
             var answer = parseInt(second) / parseInt(first)
@@ -60,8 +60,8 @@ function mather() {
             break;
         default:
 
-            resp.statusCode = 404;
-            resp.write(`.......
+            // resp.statusCode = 404;
+            console.log(`.......
 
 
   <h1> u done fucked up sun</h1>
@@ -70,7 +70,7 @@ function mather() {
 
 
   ............`)
-            resp.end("try again\n");
+            // resp.end("try again\n");
             break;
     }
 }
@@ -98,16 +98,6 @@ function stringer() {
             var chars = letters.length - div
             var answer = chars / div
             alert("the average word lenght of the " + div + " words is " + answer)
-            break;
-        case "divide":
-            var answer = parseInt(second) / parseInt(first)
-            alert(first + " divide " + second + " equals " + answer)
-            break;
-        case "pow":
-            var base = parseInt(first)
-            var exp = parseInt(second)
-            var answer = Math.pow(base, exp)
-            alert(first + " to the " + second + " equals " + answer)
             break;
         default:
 
