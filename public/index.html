@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax Stuff</title>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="jquery.modal.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="main2.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+
+</head>
+
+<body>
+    <div class="container center-block card">
+
+        <div class="row">
+            <input type="email" id="inEmail" placeholder="email">
+            <button class="btn btn-success" id="emailButton">Check Gravatar!!!!!</button>
+        </div>
+        <div class="row inline-block" id="picbox">
+            <h1 id="answer">It goes here</h1>
+            <div class="card" id="picbox"></div>
+        </div>
+        <div class="row math">
+            <input type="number" class="number math col-md-3 col-lg-3" id="math1">
+            <div class="dropdown">
+                <button id="funct1" class="btn btn-primary dropdown-toggle col-md-3 col-lg-3" type="button" data-toggle="dropdown">Choose operator
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li class="funct">sum</li>
+                    <li class="funct">subtract</li>
+                    <li class="funct">multiply</li>
+                    <li class="funct">divide</li>
+                    <li class="funct">pow</li>
+                </ul>
+            </div>
+            <input type="number" class="math number col-md-3 col-lg-3" id="math2">
+            <button class="btn-success col-md-3 col-lg-3 math" id="enterMath">Submit</button>
+        </div>
+
+
+
+    </div>
+    <div class="row string" id="string1">
+      <div class="col-lg-8">
+          <textarea class="form-control" rows="4" id="Komments"></textarea></div>
+          <div class="dropdown col-md-4 col-lg-4" rows"1">
+              <button class="btn btn-primary dropdown-toggle" id="mButton" type="button" data-toggle="dropdown">Choose function
+                  <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                  <li class="stringer">wordCount</a></li>
+                  <li class="stringer">charCount</a></li>
+                  <li class="stringer">Avgword</a></li>
+              </ul>
+          </div>
+          <button class="btn-warning col-lg-4" rows="3" id="enterString">ENTER AND FIND!</button>
+        </div>
+    </div>
+    <div class="row string" id="string2"></div>
+    <div class="row string" id="string3"></div>
+    <div class="row age" id="age">
+      <input type="number" class="number math col-md-2 col-lg-2" id="year" placeholder="year">
+      <input type="number" class="number math col-md-2 col-lg-2" id="month" placeholder="month">
+      <input type="number" class="number math col-md-2 col-lg-2" id="day" placeholder="day">
+
+      <button class="btn-danger col-lg-3" id="enterAge">ENTER AND FIND AGE SINCE!</button>
+
+
+        <div class="col-md-12"></div>
+    </div>
+    </div>
+</body>
+
+</html>
